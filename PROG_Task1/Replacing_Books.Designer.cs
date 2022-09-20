@@ -30,7 +30,6 @@ namespace PROG_Task1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Replacing_Books));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -109,10 +108,10 @@ namespace PROG_Task1
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.reset_btn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 695);
+            this.panel1.Location = new System.Drawing.Point(0, 772);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1307, 101);
+            this.panel1.Size = new System.Drawing.Size(1307, 69);
             this.panel1.TabIndex = 5;
             // 
             // label2
@@ -139,7 +138,7 @@ namespace PROG_Task1
             // textbox1
             // 
             this.textbox1.BackColor = System.Drawing.Color.OrangeRed;
-            this.textbox1.Location = new System.Drawing.Point(13, 490);
+            this.textbox1.Location = new System.Drawing.Point(0, 428);
             this.textbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox1.Name = "textbox1";
             this.textbox1.Size = new System.Drawing.Size(61, 164);
@@ -150,7 +149,7 @@ namespace PROG_Task1
             // textbox2
             // 
             this.textbox2.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.textbox2.Location = new System.Drawing.Point(88, 490);
+            this.textbox2.Location = new System.Drawing.Point(0, 600);
             this.textbox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox2.Name = "textbox2";
             this.textbox2.Size = new System.Drawing.Size(61, 164);
@@ -161,7 +160,7 @@ namespace PROG_Task1
             // textbox3
             // 
             this.textbox3.BackColor = System.Drawing.Color.Plum;
-            this.textbox3.Location = new System.Drawing.Point(165, 490);
+            this.textbox3.Location = new System.Drawing.Point(69, 428);
             this.textbox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox3.Name = "textbox3";
             this.textbox3.Size = new System.Drawing.Size(61, 164);
@@ -172,7 +171,7 @@ namespace PROG_Task1
             // textbox4
             // 
             this.textbox4.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.textbox4.Location = new System.Drawing.Point(233, 490);
+            this.textbox4.Location = new System.Drawing.Point(69, 600);
             this.textbox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox4.Name = "textbox4";
             this.textbox4.Size = new System.Drawing.Size(61, 164);
@@ -183,7 +182,7 @@ namespace PROG_Task1
             // textbox5
             // 
             this.textbox5.BackColor = System.Drawing.Color.SteelBlue;
-            this.textbox5.Location = new System.Drawing.Point(299, 490);
+            this.textbox5.Location = new System.Drawing.Point(150, 428);
             this.textbox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox5.Name = "textbox5";
             this.textbox5.Size = new System.Drawing.Size(61, 164);
@@ -194,7 +193,7 @@ namespace PROG_Task1
             // textbox6
             // 
             this.textbox6.BackColor = System.Drawing.Color.HotPink;
-            this.textbox6.Location = new System.Drawing.Point(368, 490);
+            this.textbox6.Location = new System.Drawing.Point(150, 600);
             this.textbox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox6.Name = "textbox6";
             this.textbox6.Size = new System.Drawing.Size(61, 164);
@@ -205,7 +204,7 @@ namespace PROG_Task1
             // textbox7
             // 
             this.textbox7.BackColor = System.Drawing.Color.Salmon;
-            this.textbox7.Location = new System.Drawing.Point(437, 490);
+            this.textbox7.Location = new System.Drawing.Point(232, 428);
             this.textbox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox7.Name = "textbox7";
             this.textbox7.Size = new System.Drawing.Size(61, 164);
@@ -216,7 +215,7 @@ namespace PROG_Task1
             // textbox8
             // 
             this.textbox8.BackColor = System.Drawing.Color.Gold;
-            this.textbox8.Location = new System.Drawing.Point(508, 490);
+            this.textbox8.Location = new System.Drawing.Point(232, 600);
             this.textbox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox8.Name = "textbox8";
             this.textbox8.Size = new System.Drawing.Size(61, 164);
@@ -227,7 +226,7 @@ namespace PROG_Task1
             // textbox9
             // 
             this.textbox9.BackColor = System.Drawing.Color.Chartreuse;
-            this.textbox9.Location = new System.Drawing.Point(579, 490);
+            this.textbox9.Location = new System.Drawing.Point(315, 428);
             this.textbox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox9.Name = "textbox9";
             this.textbox9.Size = new System.Drawing.Size(61, 164);
@@ -238,7 +237,7 @@ namespace PROG_Task1
             // textbox10
             // 
             this.textbox10.BackColor = System.Drawing.Color.LightBlue;
-            this.textbox10.Location = new System.Drawing.Point(648, 490);
+            this.textbox10.Location = new System.Drawing.Point(315, 600);
             this.textbox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textbox10.Name = "textbox10";
             this.textbox10.Size = new System.Drawing.Size(61, 164);
@@ -271,8 +270,7 @@ namespace PROG_Task1
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1307, 796);
+            this.ClientSize = new System.Drawing.Size(1307, 841);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
