@@ -39,22 +39,22 @@ namespace PROG_Task1
             // 
             this.Replace_btn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Replace_btn.Image = ((System.Drawing.Image)(resources.GetObject("Replace_btn.Image")));
-            this.Replace_btn.Location = new System.Drawing.Point(396, 54);
+            this.Replace_btn.Location = new System.Drawing.Point(391, 128);
             this.Replace_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Replace_btn.Name = "Replace_btn";
-            this.Replace_btn.Size = new System.Drawing.Size(376, 228);
+            this.Replace_btn.Size = new System.Drawing.Size(325, 228);
             this.Replace_btn.TabIndex = 0;
             this.Replace_btn.UseVisualStyleBackColor = false;
             this.Replace_btn.Click += new System.EventHandler(this.Replace_btn_Click);
             // 
             // Identify_btn
             // 
-            this.Identify_btn.Location = new System.Drawing.Point(82, 377);
+            this.Identify_btn.Image = ((System.Drawing.Image)(resources.GetObject("Identify_btn.Image")));
+            this.Identify_btn.Location = new System.Drawing.Point(127, 384);
             this.Identify_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Identify_btn.Name = "Identify_btn";
-            this.Identify_btn.Size = new System.Drawing.Size(199, 80);
+            this.Identify_btn.Size = new System.Drawing.Size(258, 228);
             this.Identify_btn.TabIndex = 1;
-            this.Identify_btn.Text = "Identify Areas";
             this.Identify_btn.UseVisualStyleBackColor = true;
             this.Identify_btn.Click += new System.EventHandler(this.Identify_btn_Click);
             // 
