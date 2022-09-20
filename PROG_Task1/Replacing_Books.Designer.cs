@@ -67,10 +67,12 @@ namespace PROG_Task1
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(10, 50);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 16);
+            this.label1.Size = new System.Drawing.Size(158, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "00:00:00.00";
             // 
@@ -103,7 +105,7 @@ namespace PROG_Task1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Bisque;
+            this.panel1.BackColor = System.Drawing.Color.BurlyWood;
             this.panel1.Controls.Add(this.start_btn);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.reset_btn);
@@ -117,10 +119,11 @@ namespace PROG_Task1
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(10, 23);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 16);
+            this.label2.Size = new System.Drawing.Size(62, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Timer";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -248,7 +251,7 @@ namespace PROG_Task1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(421, 370);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(208, 31);
@@ -258,7 +261,7 @@ namespace PROG_Task1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(428, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(177, 31);
