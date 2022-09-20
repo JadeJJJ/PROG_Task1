@@ -50,10 +50,10 @@ namespace PROG_Task1
             // Identify_btn
             // 
             this.Identify_btn.Image = ((System.Drawing.Image)(resources.GetObject("Identify_btn.Image")));
-            this.Identify_btn.Location = new System.Drawing.Point(127, 384);
+            this.Identify_btn.Location = new System.Drawing.Point(105, 367);
             this.Identify_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Identify_btn.Name = "Identify_btn";
-            this.Identify_btn.Size = new System.Drawing.Size(258, 228);
+            this.Identify_btn.Size = new System.Drawing.Size(280, 245);
             this.Identify_btn.TabIndex = 1;
             this.Identify_btn.UseVisualStyleBackColor = true;
             this.Identify_btn.Click += new System.EventHandler(this.Identify_btn_Click);
