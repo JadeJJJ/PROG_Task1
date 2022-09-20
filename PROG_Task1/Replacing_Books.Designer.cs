@@ -142,93 +142,103 @@ namespace PROG_Task1
             // 
             // textbox1
             // 
+            this.textbox1.BackColor = System.Drawing.Color.OrangeRed;
             this.textbox1.Location = new System.Drawing.Point(10, 398);
             this.textbox1.Name = "textbox1";
             this.textbox1.Size = new System.Drawing.Size(46, 133);
             this.textbox1.TabIndex = 9;
             this.textbox1.Text = "Book1";
-            this.textbox1.UseVisualStyleBackColor = true;
+            this.textbox1.UseVisualStyleBackColor = false;
             // 
             // textbox2
             // 
+            this.textbox2.BackColor = System.Drawing.Color.DarkTurquoise;
             this.textbox2.Location = new System.Drawing.Point(66, 398);
             this.textbox2.Name = "textbox2";
             this.textbox2.Size = new System.Drawing.Size(46, 133);
             this.textbox2.TabIndex = 10;
             this.textbox2.Text = "Book 2";
-            this.textbox2.UseVisualStyleBackColor = true;
+            this.textbox2.UseVisualStyleBackColor = false;
             // 
             // textbox3
             // 
+            this.textbox3.BackColor = System.Drawing.Color.Plum;
             this.textbox3.Location = new System.Drawing.Point(124, 398);
             this.textbox3.Name = "textbox3";
             this.textbox3.Size = new System.Drawing.Size(46, 133);
             this.textbox3.TabIndex = 11;
             this.textbox3.Text = "Book 3";
-            this.textbox3.UseVisualStyleBackColor = true;
+            this.textbox3.UseVisualStyleBackColor = false;
             // 
             // textbox4
             // 
+            this.textbox4.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.textbox4.Location = new System.Drawing.Point(175, 398);
             this.textbox4.Name = "textbox4";
             this.textbox4.Size = new System.Drawing.Size(46, 133);
             this.textbox4.TabIndex = 12;
             this.textbox4.Text = "Book 4";
-            this.textbox4.UseVisualStyleBackColor = true;
+            this.textbox4.UseVisualStyleBackColor = false;
             // 
             // textbox5
             // 
+            this.textbox5.BackColor = System.Drawing.Color.SteelBlue;
             this.textbox5.Location = new System.Drawing.Point(224, 398);
             this.textbox5.Name = "textbox5";
             this.textbox5.Size = new System.Drawing.Size(46, 133);
             this.textbox5.TabIndex = 13;
             this.textbox5.Text = "Book 5";
-            this.textbox5.UseVisualStyleBackColor = true;
+            this.textbox5.UseVisualStyleBackColor = false;
             // 
             // textbox6
             // 
+            this.textbox6.BackColor = System.Drawing.Color.HotPink;
             this.textbox6.Location = new System.Drawing.Point(276, 398);
             this.textbox6.Name = "textbox6";
             this.textbox6.Size = new System.Drawing.Size(46, 133);
             this.textbox6.TabIndex = 14;
             this.textbox6.Text = "Book 6";
-            this.textbox6.UseVisualStyleBackColor = true;
+            this.textbox6.UseVisualStyleBackColor = false;
             // 
             // textbox7
             // 
+            this.textbox7.BackColor = System.Drawing.Color.Salmon;
             this.textbox7.Location = new System.Drawing.Point(328, 398);
             this.textbox7.Name = "textbox7";
             this.textbox7.Size = new System.Drawing.Size(46, 133);
             this.textbox7.TabIndex = 15;
             this.textbox7.Text = "Book 7";
-            this.textbox7.UseVisualStyleBackColor = true;
+            this.textbox7.UseVisualStyleBackColor = false;
             // 
             // textbox8
             // 
+            this.textbox8.BackColor = System.Drawing.Color.Gold;
             this.textbox8.Location = new System.Drawing.Point(381, 398);
             this.textbox8.Name = "textbox8";
             this.textbox8.Size = new System.Drawing.Size(46, 133);
             this.textbox8.TabIndex = 16;
             this.textbox8.Text = "Book 8";
-            this.textbox8.UseVisualStyleBackColor = true;
+            this.textbox8.UseVisualStyleBackColor = false;
             // 
             // textbox9
             // 
+            this.textbox9.BackColor = System.Drawing.Color.Chartreuse;
             this.textbox9.Location = new System.Drawing.Point(434, 398);
             this.textbox9.Name = "textbox9";
             this.textbox9.Size = new System.Drawing.Size(46, 133);
             this.textbox9.TabIndex = 17;
             this.textbox9.Text = "Book 9";
-            this.textbox9.UseVisualStyleBackColor = true;
+            this.textbox9.UseVisualStyleBackColor = false;
             // 
             // textbox10
             // 
+            this.textbox10.BackColor = System.Drawing.Color.LightBlue;
             this.textbox10.Location = new System.Drawing.Point(486, 398);
             this.textbox10.Name = "textbox10";
             this.textbox10.Size = new System.Drawing.Size(46, 133);
             this.textbox10.TabIndex = 18;
             this.textbox10.Text = "Book 10";
-            this.textbox10.UseVisualStyleBackColor = true;
+            this.textbox10.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
