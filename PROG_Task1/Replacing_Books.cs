@@ -189,12 +189,16 @@ namespace PROG_Task1
         }
 
 
-
+        //When the user wants to restart the application,resets the timer and creates new books to sort
         private void reset_btn_Click(object sender, EventArgs e)
         {
             stopwatch.Reset();
+            Replacing_Books f2 = new Replacing_Books();
+            f2.Show();
+            this.Hide();
         }
 
+        //If the user click,this takes them back to the selection screen
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();

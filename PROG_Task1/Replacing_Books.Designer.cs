@@ -56,14 +56,15 @@ namespace PROG_Task1
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(184, 31);
+            this.button1.Location = new System.Drawing.Point(236, 14);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(95, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "MENU";
             this.button1.UseVisualStyleBackColor = true;
@@ -87,9 +88,9 @@ namespace PROG_Task1
             // 
             // start_btn
             // 
-            this.start_btn.Location = new System.Drawing.Point(3, 31);
+            this.start_btn.Location = new System.Drawing.Point(3, 14);
             this.start_btn.Name = "start_btn";
-            this.start_btn.Size = new System.Drawing.Size(75, 23);
+            this.start_btn.Size = new System.Drawing.Size(95, 34);
             this.start_btn.TabIndex = 2;
             this.start_btn.Text = "START";
             this.start_btn.UseVisualStyleBackColor = true;
@@ -97,9 +98,9 @@ namespace PROG_Task1
             // 
             // reset_btn
             // 
-            this.reset_btn.Location = new System.Drawing.Point(96, 31);
+            this.reset_btn.Location = new System.Drawing.Point(112, 14);
             this.reset_btn.Name = "reset_btn";
-            this.reset_btn.Size = new System.Drawing.Size(75, 23);
+            this.reset_btn.Size = new System.Drawing.Size(95, 33);
             this.reset_btn.TabIndex = 4;
             this.reset_btn.Text = "RESET";
             this.reset_btn.UseVisualStyleBackColor = true;
@@ -115,7 +116,7 @@ namespace PROG_Task1
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 627);
+            this.panel1.Location = new System.Drawing.Point(0, 642);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(980, 56);
             this.panel1.TabIndex = 5;
@@ -307,12 +308,22 @@ namespace PROG_Task1
             this.textBox14.Size = new System.Drawing.Size(10, 189);
             this.textBox14.TabIndex = 25;
             // 
+            // textBox15
+            // 
+            this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.textBox15.Location = new System.Drawing.Point(0, 621);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(282, 14);
+            this.textBox15.TabIndex = 26;
+            // 
             // Replacing_Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(980, 683);
+            this.ClientSize = new System.Drawing.Size(980, 698);
+            this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.label4);
@@ -368,5 +379,6 @@ namespace PROG_Task1
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
     }
 }
