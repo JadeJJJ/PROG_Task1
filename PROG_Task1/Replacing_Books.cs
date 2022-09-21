@@ -15,7 +15,7 @@ namespace PROG_Task1
     {
         //List to store books
         List<Button> books = new List<Button>();
-        Random rnd = new Random();
+        Random rando = new Random();
         Stopwatch stopwatch;
         public Replacing_Books()
         {
@@ -58,15 +58,15 @@ namespace PROG_Task1
             String randomNumbers2 = "";
             
 
-            for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
             {
-                int ascii_index = rnd.Next(65, 91);
+                int ascii_index = rando.Next(65, 91);
                 char RandomUpperCase = Convert.ToChar(ascii_index);
                 randomLetters += RandomUpperCase;
-                int randNum1 = rnd.Next(10);
+                int randNum1 = rando.Next(10);
                 randomNumbers1 += randNum1;
 
-                int randNum2 = rnd.Next(10);
+                int randNum2 = rando.Next(10);
                 randomNumbers2 += randNum2;
 
             }
@@ -144,11 +144,14 @@ namespace PROG_Task1
 
                     Boolean flag = books[0].Location.X < books[1].Location.X &&
                                    books[1].Location.X < books[2].Location.X &&
+
                                    books[2].Location.X < books[3].Location.X &&
-                                   books[3].Location.X < books[4].Location.X &&
+                                  books[3].Location.X < books[4].Location.X &&
+
                                   books[4].Location.X < books[5].Location.X &&
                                   books[5].Location.X < books[6].Location.X &&
-                               books[6].Location.X < books[7].Location.X &&
+
+                                  books[6].Location.X < books[7].Location.X &&
                               books[7].Location.X < books[8].Location.X &&
                               books[8].Location.X < books[9].Location.X;
 
@@ -156,12 +159,12 @@ namespace PROG_Task1
                     if (flag == true)
                     {
                         //If successfully sorted this message appears
-                        MessageBox.Show("The Books have been correctly sorted!!");
+                        MessageBox.Show("The Books have BEEN correctly sorted!!");
                     }
                     else
                     {
                         //If unsuccessfully sorted this me
-                        MessageBox.Show("The books have not been correctly sorted!!");
+                        MessageBox.Show("The Books have NOT BEEN correctly sorted!!");
                     }
                 }
                 catch (Exception) { }
@@ -210,3 +213,5 @@ namespace PROG_Task1
        
     }
 }
+//----------------------------------------------------END 0F PR0GR@M-------------------------------------------------------------------------------------------------
+//---------------------------------------------By @J@DE J@ll@HR$-----------------------------------------------------------------------------------------------------
