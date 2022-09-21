@@ -21,6 +21,7 @@ namespace PROG_Task1
         {
             InitializeComponent();
 
+            //On start Up the Books are filled with the Call numbers 
             textbox1.Text = callnumber();
             textbox2.Text = callnumber();
             textbox3.Text = callnumber();
@@ -49,6 +50,7 @@ namespace PROG_Task1
 
 
         }
+        //Call numbers are generated 
         public String callnumber()
         {
             String randomLetters = "";
@@ -64,14 +66,16 @@ namespace PROG_Task1
                 int randNum1 = rnd.Next(10);
                 randomNumbers1 += randNum1;
 
-                int rdtemp2 = rnd.Next(10);
-                randomNumbers2 += rdtemp2;
+                int randNum2 = rnd.Next(10);
+                randomNumbers2 += randNum2;
 
             }
             String id = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
             return id;
         }
-       
+
+
+       //Formats the Timer used in the application
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
@@ -85,12 +89,13 @@ namespace PROG_Task1
 
         private void start_btn_Click(object sender, EventArgs e)
         {
+            //When the user presses start the Timer starts
             stopwatch.Start();
 
             if (start_btn.Text.Equals("START"))
             {
 
-                //EXTENSION FOR DRAGGABLE
+                //When the user clicks start, the books are draggable
 
                 ControlExtension.Draggable(textbox1, true);
                 ControlExtension.Draggable(textbox2, true);
@@ -109,7 +114,7 @@ namespace PROG_Task1
             }
             else
             {
-               
+               // Timer Stops
                 stopwatch.Stop();
                 
                 Button temp;
@@ -150,14 +155,17 @@ namespace PROG_Task1
 
                     if (flag == true)
                     {
+                        //If successfully sorted this message appears
                         MessageBox.Show("The Books have been correctly sorted!!");
                     }
                     else
                     {
+                        //If unsuccessfully sorted this me
                         MessageBox.Show("The books have not been correctly sorted!!");
                     }
                 }
-                catch (Exception ee) { }
+                catch (Exception) { }
+                
 
 
 
@@ -182,13 +190,6 @@ namespace PROG_Task1
 
 
 
-
-
-        private void stop_btn_Click(object sender, EventArgs e)
-        {
-            stopwatch.Stop();
-        }
-
         private void reset_btn_Click(object sender, EventArgs e)
         {
             stopwatch.Reset();
@@ -201,20 +202,6 @@ namespace PROG_Task1
             this.Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
        
     }
