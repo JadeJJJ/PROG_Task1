@@ -19,7 +19,7 @@ namespace PROG_Task1
 
         private void Identify_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemetned Yet!!");
+            MessageBox.Show("Identifying Has not Been Implemetned Yet!!");
         }
 
         private void Replace_btn_Click(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace PROG_Task1
 
         private void callNum_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemetned Yet!!");
+            MessageBox.Show("Finding Call Numbers Has Not Been Implemetned Yet!!");
         }
 
         private void Form1_Load(object sender, EventArgs e)
