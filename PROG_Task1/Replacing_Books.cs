@@ -22,8 +22,8 @@ namespace PROG_Task1
             InitializeComponent();
 
             textbox1.Text = callnumber();
-            textbox2.Text = callnumber1();
-            textbox3.Text = callnumber2();
+            textbox2.Text = callnumber();
+            textbox3.Text = callnumber();
             textbox4.Text = callnumber();
             textbox5.Text = callnumber();
             textbox6.Text = callnumber();
@@ -59,10 +59,10 @@ namespace PROG_Task1
             for (int i = 0; i < 3; i++)
             {
                 int ascii_index = rnd.Next(65, 91);
-                char myRandomUpperCase = Convert.ToChar(ascii_index);
-                randomLetters += myRandomUpperCase;
-                int rdtemp1 = rnd.Next(10);
-                randomNumbers1 += rdtemp1;
+                char RandomUpperCase = Convert.ToChar(ascii_index);
+                randomLetters += RandomUpperCase;
+                int randNum1 = rnd.Next(10);
+                randomNumbers1 += randNum1;
 
                 int rdtemp2 = rnd.Next(10);
                 randomNumbers2 += rdtemp2;
@@ -71,50 +71,7 @@ namespace PROG_Task1
             String id = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
             return id;
         }
-        public String callnumber1()
-        {
-            String randomLetters = "";
-            String randomNumbers1 = "";
-            String randomNumbers2 = "";
-           
-
-            for (int i = 0; i < 3; i++)
-            {
-                int ascii_index = rnd.Next(65, 91);
-                char myRandomUpperCase = Convert.ToChar(ascii_index);
-                randomLetters += myRandomUpperCase;
-                int rdtemp1 = rnd.Next(1,10);
-                randomNumbers1 += rdtemp1;
-
-                int rdtemp2 = rnd.Next(10);
-                randomNumbers2 += rdtemp2;
-
-            }
-            String id = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
-            return id;
-        }
-        public String callnumber2()
-        {
-            String randomLetters = "";
-            String randomNumbers1 = "";
-            String randomNumbers2 = "";
-            Random rnd = new Random();
-
-            for (int i = 0; i < 3; i++)
-            {
-                int ascii_index = rnd.Next(65, 91);
-                char myRandomUpperCase = Convert.ToChar(ascii_index);
-                randomLetters += myRandomUpperCase;
-                int rdtemp1 = rnd.Next(1,10);
-                randomNumbers1 += rdtemp1;
-
-                int rdtemp2 = rnd.Next(1,10);
-                randomNumbers2 += rdtemp2;
-
-            }
-            String id = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
-            return id;
-        }
+       
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
@@ -154,30 +111,31 @@ namespace PROG_Task1
             {
                
                 stopwatch.Stop();
+                
                 Button temp;
                 //Bubble sorting is used to sort the books once they have been stored in the list
                 for (int j = 0; j <= books.Count - 2; j++)
                 {
-                    for (int i = 0; i <= books.Count - 2; i++)
+                    for (int k = 0; k <= books.Count - 2; k++)
                     {
-                        String t1 = books[i].Text;
-                        String t2 = books[i + 1].Text;
+                        String t1 = books[k].Text;
+                        String t2 = books[k + 1].Text;
 
                         int temp1 = Int32.Parse(t1.Substring(0, 3));
                         int temp2 = Int32.Parse(t2.Substring(0, 3));
 
                         if (temp1 > temp2)
                         {
-                            temp = books[i + 1];
-                            books[i + 1] = books[i];
-                            books[i] = temp;
+                            temp = books[k + 1];
+                            books[k + 1] = books[k];
+                            books[k] = temp;
                         }
                     }
                 }
 
                 try
                 {
-                    //Button locations are checked
+                    //Button locations are checked with the sorted List of books
 
                     Boolean flag = books[0].Location.X < books[1].Location.X &&
                                    books[1].Location.X < books[2].Location.X &&

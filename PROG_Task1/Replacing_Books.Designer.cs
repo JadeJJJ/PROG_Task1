@@ -37,6 +37,7 @@ namespace PROG_Task1
             this.start_btn = new System.Windows.Forms.Button();
             this.reset_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textbox1 = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@ namespace PROG_Task1
             this.textbox10 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -65,7 +65,7 @@ namespace PROG_Task1
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Menu";
+            this.button1.Text = "MENU";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -119,6 +119,17 @@ namespace PROG_Task1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(980, 56);
             this.panel1.TabIndex = 5;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(703, 8);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(43, 46);
+            this.button2.TabIndex = 21;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -260,17 +271,6 @@ namespace PROG_Task1
             this.label4.Size = new System.Drawing.Size(177, 31);
             this.label4.TabIndex = 20;
             this.label4.Text = "Sorted Books";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(703, 8);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(43, 46);
-            this.button2.TabIndex = 21;
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // textBox11
             // 
