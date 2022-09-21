@@ -74,7 +74,7 @@ namespace PROG_Task1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(64, 41);
+            this.label1.Location = new System.Drawing.Point(810, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(158, 31);
             this.label1.TabIndex = 1;
@@ -111,6 +111,9 @@ namespace PROG_Task1
             this.panel1.Controls.Add(this.start_btn);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.reset_btn);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 627);
             this.panel1.Name = "panel1";
@@ -121,11 +124,11 @@ namespace PROG_Task1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(72, 20);
+            this.label2.Location = new System.Drawing.Point(751, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 25);
+            this.label2.Size = new System.Drawing.Size(68, 25);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Timer";
+            this.label2.Text = "Timer:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox1
@@ -262,7 +265,7 @@ namespace PROG_Task1
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(24, 20);
+            this.button2.Location = new System.Drawing.Point(703, 8);
             this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(43, 46);
@@ -315,10 +318,7 @@ namespace PROG_Task1
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textbox10);
             this.Controls.Add(this.textbox9);
@@ -336,6 +336,7 @@ namespace PROG_Task1
             this.Text = "Replacing_Books";
             this.Load += new System.EventHandler(this.Replacing_Books_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
