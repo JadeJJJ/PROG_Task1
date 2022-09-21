@@ -60,7 +60,7 @@ namespace PROG_Task1
             // 
             this.callNum_btn.Location = new System.Drawing.Point(576, 298);
             this.callNum_btn.Name = "callNum_btn";
-            this.callNum_btn.Size = new System.Drawing.Size(145, 58);
+            this.callNum_btn.Size = new System.Drawing.Size(229, 113);
             this.callNum_btn.TabIndex = 2;
             this.callNum_btn.Text = "Finding Call Numbers";
             this.callNum_btn.UseVisualStyleBackColor = true;

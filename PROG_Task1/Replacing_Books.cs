@@ -70,8 +70,8 @@ namespace PROG_Task1
                 randomNumbers2 += randNum2;
 
             }
-            String id = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
-            return id;
+            String callNumId = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
+            return callNumId;
         }
 
 
