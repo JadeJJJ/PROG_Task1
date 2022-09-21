@@ -140,7 +140,7 @@ namespace PROG_Task1
 
                 try
                 {
-                    //Button locations are checked with the sorted List of books
+                    //Book locations are checked with the sorted List of books
 
                     Boolean flag = books[0].Location.X < books[1].Location.X &&
                                    books[1].Location.X < books[2].Location.X &&

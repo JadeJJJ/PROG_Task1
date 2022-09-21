@@ -140,7 +140,6 @@ namespace PROG_Task1
             this.label2.Size = new System.Drawing.Size(68, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Timer:";
-           // this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox1
             // 
@@ -314,10 +313,8 @@ namespace PROG_Task1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(980, 683);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.textBox13);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textbox10);
@@ -332,6 +329,8 @@ namespace PROG_Task1
             this.Controls.Add(this.textbox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.textBox14);
             this.Name = "Replacing_Books";
             this.Text = "Replacing_Books";
             this.Load += new System.EventHandler(this.Replacing_Books_Load);
