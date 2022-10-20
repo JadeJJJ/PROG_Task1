@@ -15,15 +15,16 @@ namespace PROG_Task1
     {
         //List to store books
         List<Button> books = new List<Button>();
-        Random rnd = new Random();
+        Random rando = new Random();
         Stopwatch stopwatch;
         public Replacing_Books()
         {
             InitializeComponent();
 
+            //On start Up the Books are filled with the Call numbers 
             textbox1.Text = callnumber();
-            textbox2.Text = callnumber1();
-            textbox3.Text = callnumber2();
+            textbox2.Text = callnumber();
+            textbox3.Text = callnumber();
             textbox4.Text = callnumber();
             textbox5.Text = callnumber();
             textbox6.Text = callnumber();
@@ -49,6 +50,7 @@ namespace PROG_Task1
 
 
         }
+        //Call numbers are generated 
         public String callnumber()
         {
             String randomLetters = "";
@@ -56,65 +58,24 @@ namespace PROG_Task1
             String randomNumbers2 = "";
             
 
-            for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
             {
-                int ascii_index = rnd.Next(65, 91);
-                char myRandomUpperCase = Convert.ToChar(ascii_index);
-                randomLetters += myRandomUpperCase;
-                int rdtemp1 = rnd.Next(10);
-                randomNumbers1 += rdtemp1;
+                int ascii_index = rando.Next(65, 91);
+                char RandomUpperCase = Convert.ToChar(ascii_index);
+                randomLetters += RandomUpperCase;
+                int randNum1 = rando.Next(10);
+                randomNumbers1 += randNum1;
 
-                int rdtemp2 = rnd.Next(10);
-                randomNumbers2 += rdtemp2;
+                int randNum2 = rando.Next(10);
+                randomNumbers2 += randNum2;
 
             }
-            String id = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
-            return id;
+            String callNumId = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
+            return callNumId;
         }
-        public String callnumber1()
-        {
-            String randomLetters = "";
-            String randomNumbers1 = "";
-            String randomNumbers2 = "";
-           
 
-            for (int i = 0; i < 3; i++)
-            {
-                int ascii_index = rnd.Next(65, 91);
-                char myRandomUpperCase = Convert.ToChar(ascii_index);
-                randomLetters += myRandomUpperCase;
-                int rdtemp1 = rnd.Next(1,10);
-                randomNumbers1 += rdtemp1;
 
-                int rdtemp2 = rnd.Next(10);
-                randomNumbers2 += rdtemp2;
-
-            }
-            String id = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
-            return id;
-        }
-        public String callnumber2()
-        {
-            String randomLetters = "";
-            String randomNumbers1 = "";
-            String randomNumbers2 = "";
-            Random rnd = new Random();
-
-            for (int i = 0; i < 3; i++)
-            {
-                int ascii_index = rnd.Next(65, 91);
-                char myRandomUpperCase = Convert.ToChar(ascii_index);
-                randomLetters += myRandomUpperCase;
-                int rdtemp1 = rnd.Next(1,10);
-                randomNumbers1 += rdtemp1;
-
-                int rdtemp2 = rnd.Next(1,10);
-                randomNumbers2 += rdtemp2;
-
-            }
-            String id = randomNumbers1 + "." + randomNumbers2 + " " + randomLetters;
-            return id;
-        }
+       //Formats the Timer used in the application
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
@@ -128,12 +89,13 @@ namespace PROG_Task1
 
         private void start_btn_Click(object sender, EventArgs e)
         {
+            //When the user presses start the Timer starts
             stopwatch.Start();
 
             if (start_btn.Text.Equals("START"))
             {
 
-                //EXTENSION FOR DRAGGABLE
+                //When the user clicks start, the books are draggable
 
                 ControlExtension.Draggable(textbox1, true);
                 ControlExtension.Draggable(textbox2, true);
@@ -152,54 +114,61 @@ namespace PROG_Task1
             }
             else
             {
-               
+               // Timer Stops
                 stopwatch.Stop();
+                
                 Button temp;
                 //Bubble sorting is used to sort the books once they have been stored in the list
                 for (int j = 0; j <= books.Count - 2; j++)
                 {
-                    for (int i = 0; i <= books.Count - 2; i++)
+                    for (int k = 0; k <= books.Count - 2; k++)
                     {
-                        String t1 = books[i].Text;
-                        String t2 = books[i + 1].Text;
+                        String t1 = books[k].Text;
+                        String t2 = books[k + 1].Text;
 
                         int temp1 = Int32.Parse(t1.Substring(0, 3));
                         int temp2 = Int32.Parse(t2.Substring(0, 3));
 
                         if (temp1 > temp2)
                         {
-                            temp = books[i + 1];
-                            books[i + 1] = books[i];
-                            books[i] = temp;
+                            temp = books[k + 1];
+                            books[k + 1] = books[k];
+                            books[k] = temp;
                         }
                     }
                 }
 
                 try
                 {
-                    //Button locations are checked
+                    //Book locations are checked with the sorted List of books
 
                     Boolean flag = books[0].Location.X < books[1].Location.X &&
                                    books[1].Location.X < books[2].Location.X &&
+
                                    books[2].Location.X < books[3].Location.X &&
-                                   books[3].Location.X < books[4].Location.X &&
+                                  books[3].Location.X < books[4].Location.X &&
+
                                   books[4].Location.X < books[5].Location.X &&
                                   books[5].Location.X < books[6].Location.X &&
-                               books[6].Location.X < books[7].Location.X &&
+
+                                  books[6].Location.X < books[7].Location.X &&
                               books[7].Location.X < books[8].Location.X &&
                               books[8].Location.X < books[9].Location.X;
 
 
                     if (flag == true)
                     {
-                        MessageBox.Show("The Books have been correctly sorted!!");
+                        //If successfully sorted this message appears
+                        MessageBox.Show("The Books have BEEN correctly sorted!!");
                     }
                     else
                     {
-                        MessageBox.Show("The books have not been correctly sorted!!");
+                        //If unsuccessfully sorted this me
+                        MessageBox.Show("The Books have NOT BEEN correctly sorted!!");
                     }
                 }
-                catch (Exception ee) { }
+                catch (Exception) { }
+                
 
 
 
@@ -223,19 +192,16 @@ namespace PROG_Task1
         }
 
 
-
-
-
-        private void stop_btn_Click(object sender, EventArgs e)
-        {
-            stopwatch.Stop();
-        }
-
+        //When the user wants to restart the application,resets the timer and creates new books to sort
         private void reset_btn_Click(object sender, EventArgs e)
         {
             stopwatch.Reset();
+            Replacing_Books f2 = new Replacing_Books();
+            f2.Show();
+            this.Hide();
         }
 
+        //If the user click,this takes them back to the selection screen
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
@@ -243,21 +209,9 @@ namespace PROG_Task1
             this.Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
        
     }
 }
+//----------------------------------------------------END 0F PR0GR@M-------------------------------------------------------------------------------------------------
+//---------------------------------------------By @J@DE J@ll@HR$-----------------------------------------------------------------------------------------------------
