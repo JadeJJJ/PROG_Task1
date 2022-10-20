@@ -19,7 +19,10 @@ namespace PROG_Task1
 
         private void Identify_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Identifying Has not Been Implemetned Yet!!");
+            //MessageBox.Show("Identifying Has not Been Implemetned Yet!!");
+            Identifying_Areas IA = new Identifying_Areas();
+            IA.Show();
+            this.Hide();
         }
 
         private void Replace_btn_Click(object sender, EventArgs e)
