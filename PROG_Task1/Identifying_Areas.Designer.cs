@@ -48,10 +48,10 @@ namespace PROG_Task1
             this.panel1.Controls.Add(this.resetBTN);
             this.panel1.Controls.Add(this.startBTN);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 667);
+            this.panel1.Location = new System.Drawing.Point(0, 763);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1479, 75);
+            this.panel1.Size = new System.Drawing.Size(1505, 75);
             this.panel1.TabIndex = 0;
             // 
             // menuBTN
@@ -90,7 +90,7 @@ namespace PROG_Task1
             this.first.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.first.Location = new System.Drawing.Point(41, 66);
             this.first.Name = "first";
-            this.first.Size = new System.Drawing.Size(143, 54);
+            this.first.Size = new System.Drawing.Size(339, 54);
             this.first.TabIndex = 1;
             this.first.Text = "label1";
             // 
@@ -99,7 +99,7 @@ namespace PROG_Task1
             this.second.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.second.Location = new System.Drawing.Point(41, 148);
             this.second.Name = "second";
-            this.second.Size = new System.Drawing.Size(143, 58);
+            this.second.Size = new System.Drawing.Size(339, 58);
             this.second.TabIndex = 2;
             this.second.Text = "label1";
             // 
@@ -108,7 +108,7 @@ namespace PROG_Task1
             this.third.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.third.Location = new System.Drawing.Point(41, 273);
             this.third.Name = "third";
-            this.third.Size = new System.Drawing.Size(143, 58);
+            this.third.Size = new System.Drawing.Size(339, 58);
             this.third.TabIndex = 3;
             this.third.Text = "label1";
             // 
@@ -117,7 +117,7 @@ namespace PROG_Task1
             this.fourth.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fourth.Location = new System.Drawing.Point(41, 400);
             this.fourth.Name = "fourth";
-            this.fourth.Size = new System.Drawing.Size(143, 58);
+            this.fourth.Size = new System.Drawing.Size(339, 58);
             this.fourth.TabIndex = 4;
             this.fourth.Text = "label1";
             // 
@@ -128,23 +128,24 @@ namespace PROG_Task1
             this.descripBox.ItemHeight = 31;
             this.descripBox.Location = new System.Drawing.Point(573, 52);
             this.descripBox.Name = "descripBox";
-            this.descripBox.Size = new System.Drawing.Size(776, 593);
+            this.descripBox.Size = new System.Drawing.Size(878, 593);
             this.descripBox.TabIndex = 5;
             // 
             // CHECK
             // 
-            this.CHECK.Location = new System.Drawing.Point(473, 568);
+            this.CHECK.Location = new System.Drawing.Point(426, 699);
             this.CHECK.Name = "CHECK";
-            this.CHECK.Size = new System.Drawing.Size(75, 23);
+            this.CHECK.Size = new System.Drawing.Size(117, 44);
             this.CHECK.TabIndex = 6;
             this.CHECK.Text = "CHECK";
             this.CHECK.UseVisualStyleBackColor = true;
+            this.CHECK.Click += new System.EventHandler(this.CHECK_Click);
             // 
             // Identifying_Areas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1479, 742);
+            this.ClientSize = new System.Drawing.Size(1505, 838);
             this.Controls.Add(this.CHECK);
             this.Controls.Add(this.descripBox);
             this.Controls.Add(this.fourth);

@@ -36,16 +36,16 @@ namespace PROG_Task1
             callNums.Add(9, "800");
             callNums.Add(10, "900");
 
-            descrips.Add(1, "knowledge about many things");
-            descrips.Add(2, "systematic study of the interplay between philosophical concerns in the study of cognition");
-            descrips.Add(3, "Faith in a higher power");
-            descrips.Add(4, "The study of human behaviour and social aspects");
-            descrips.Add(5, "How humans express verbally/writtenly");
-            descrips.Add(6, "study of the structure and behaviour of the physical and natural world via observation/experiment");
-            descrips.Add(7, "application of scientific knowledge for practical purposes");
-            descrips.Add(8, " provide services to meet varied cultural");
-            descrips.Add(9, "imaginative works of poetry");
-            descrips.Add(10, "geographic phenomena have changed over time");
+            descrips.Add(1,"Knowledge about many things");
+            descrips.Add(2,"Systematic study of the interplay between philosophical concerns in the study of cognition");
+            descrips.Add(3,"Faith in a higher power");
+            descrips.Add(4,"The study of human behaviour and social aspects");
+            descrips.Add(5,"How humans express verbally/writtenly");
+            descrips.Add(6,"Study of the structure and behaviour of the physical and natural world via observation/experiment");
+            descrips.Add(7,"Application of scientific knowledge for practical purposes");
+            descrips.Add(8,"Provide services to meet varied cultural");
+            descrips.Add(9,"Imaginative works of poetry");
+            descrips.Add(10,"Geographic phenomena have changed over time");
 
 
         }
@@ -104,6 +104,144 @@ namespace PROG_Task1
             third.Text = callNums[callNum3];
             fourth.Text = callNums[callNum4];
 
+        }
+
+        private void CHECK_Click(object sender, EventArgs e)
+        {
+            count++;
+            if (descripBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Select A Description");
+            }
+            else
+            {
+
+                int key = descripBox.SelectedIndex + 1;
+
+                if (count == 1)
+                {
+                    ASSESS(callNum, key);
+
+                }
+                else if (count == 2)
+                {
+                    ASSESS(callNum2, key);
+
+                }
+
+                else if (count == 3)
+                {
+                    ASSESS(callNum3, key);
+
+                }
+
+                else
+                {
+                    ASSESS(callNum4, key);
+
+
+                }
+
+            }
+        }
+
+        public void ASSESS(int anikey, int key)
+        {
+
+
+            if (anikey == key)
+            {
+                win++;
+
+                if (count == 1)
+                {
+                    first.Text = "Won " + callNums[callNum];
+                    second.Text = "-> " + callNums[callNum2];
+
+
+                }
+                else if (count == 2)
+                {
+                    second.Text = "Won " + callNums[callNum2];
+                    third.Text = "-> " + callNums[callNum3];
+
+
+                }
+
+                else if (count == 3)
+                {
+
+                    third.Text = "Won " + callNums[callNum3];
+                    fourth.Text = "-> " + callNums[callNum4];
+
+                }
+
+                else if (count == 4)
+                {
+                    fourth.Text = "Won " + callNums[callNum4];
+                    //Form1 f = new Form1();
+                    // f.Show();
+                    //this.Hide();
+
+
+
+                }
+
+
+            }
+
+
+            else
+            {
+
+                if (count == 1)
+                {
+                    first.Text = "Lose " + callNums[callNum];
+                    second.Text = "-> " + callNums[callNum2];
+
+
+                }
+                else if (count == 2)
+                {
+                    second.Text = "Lose " + callNums[callNum2];
+                    third.Text = "-> " + callNums[callNum3];
+
+
+                }
+
+                else if (count == 3)
+                {
+
+                    third.Text = "Lose " + callNums[callNum3];
+                    fourth.Text = "-> " + callNums[callNum4];
+
+                }
+
+                else if (count == 4)
+                {
+                    fourth.Text = "Lose -> " + callNums[callNum4];
+
+                    if (win != 4)
+                    {
+                        MessageBox.Show("You LOOSE ! TRY AGAIN");
+
+                        Form1 f = new Form1();
+                        f.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("You WON ! PLAY AGAIN");
+                        Form1 f = new Form1();
+                        f.Show();
+                        this.Hide();
+                    }
+
+                }
+
+
+
+            }
         }
     }
 
