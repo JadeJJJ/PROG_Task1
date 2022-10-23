@@ -16,5 +16,10 @@ namespace PROG_Task1
         {
             InitializeComponent();
         }
+
+        private void Finding_Call_Numbers_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
