@@ -38,7 +38,6 @@ namespace PROG_Task1
             this.second = new System.Windows.Forms.Label();
             this.third = new System.Windows.Forms.Label();
             this.fourth = new System.Windows.Forms.Label();
-            this.descripBox = new System.Windows.Forms.ListBox();
             this.CHECK = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,19 +47,21 @@ namespace PROG_Task1
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.descripBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel1.Controls.Add(this.menuBTN);
             this.panel1.Controls.Add(this.resetBTN);
             this.panel1.Controls.Add(this.startBTN);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 763);
+            this.panel1.Location = new System.Drawing.Point(0, 767);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1505, 75);
+            this.panel1.Size = new System.Drawing.Size(1817, 75);
             this.panel1.TabIndex = 0;
             // 
             // menuBTN
@@ -97,7 +98,7 @@ namespace PROG_Task1
             // first
             // 
             this.first.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.first.Location = new System.Drawing.Point(41, 66);
+            this.first.Location = new System.Drawing.Point(11, 166);
             this.first.Name = "first";
             this.first.Size = new System.Drawing.Size(339, 54);
             this.first.TabIndex = 1;
@@ -106,7 +107,7 @@ namespace PROG_Task1
             // second
             // 
             this.second.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.second.Location = new System.Drawing.Point(41, 148);
+            this.second.Location = new System.Drawing.Point(11, 291);
             this.second.Name = "second";
             this.second.Size = new System.Drawing.Size(339, 58);
             this.second.TabIndex = 2;
@@ -115,7 +116,7 @@ namespace PROG_Task1
             // third
             // 
             this.third.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.third.Location = new System.Drawing.Point(41, 273);
+            this.third.Location = new System.Drawing.Point(11, 437);
             this.third.Name = "third";
             this.third.Size = new System.Drawing.Size(339, 58);
             this.third.TabIndex = 3;
@@ -124,21 +125,11 @@ namespace PROG_Task1
             // fourth
             // 
             this.fourth.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fourth.Location = new System.Drawing.Point(41, 400);
+            this.fourth.Location = new System.Drawing.Point(12, 587);
             this.fourth.Name = "fourth";
             this.fourth.Size = new System.Drawing.Size(339, 58);
             this.fourth.TabIndex = 4;
             this.fourth.Text = "label1";
-            // 
-            // descripBox
-            // 
-            this.descripBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descripBox.FormattingEnabled = true;
-            this.descripBox.ItemHeight = 31;
-            this.descripBox.Location = new System.Drawing.Point(573, 52);
-            this.descripBox.Name = "descripBox";
-            this.descripBox.Size = new System.Drawing.Size(878, 593);
-            this.descripBox.TabIndex = 5;
             // 
             // CHECK
             // 
@@ -153,7 +144,7 @@ namespace PROG_Task1
             // label1
             // 
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(324, 66);
+            this.label1.Location = new System.Drawing.Point(374, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 46);
             this.label1.TabIndex = 7;
@@ -162,7 +153,7 @@ namespace PROG_Task1
             // label2
             // 
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(324, 139);
+            this.label2.Location = new System.Drawing.Point(374, 291);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 46);
             this.label2.TabIndex = 8;
@@ -171,7 +162,7 @@ namespace PROG_Task1
             // label3
             // 
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(324, 262);
+            this.label3.Location = new System.Drawing.Point(374, 437);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 46);
             this.label3.TabIndex = 9;
@@ -180,7 +171,7 @@ namespace PROG_Task1
             // label4
             // 
             this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(324, 384);
+            this.label4.Location = new System.Drawing.Point(374, 587);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 46);
             this.label4.TabIndex = 10;
@@ -189,7 +180,7 @@ namespace PROG_Task1
             // label5
             // 
             this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
-            this.label5.Location = new System.Drawing.Point(445, 66);
+            this.label5.Location = new System.Drawing.Point(445, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 46);
             this.label5.TabIndex = 11;
@@ -198,7 +189,7 @@ namespace PROG_Task1
             // label6
             // 
             this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
-            this.label6.Location = new System.Drawing.Point(445, 139);
+            this.label6.Location = new System.Drawing.Point(445, 291);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 46);
             this.label6.TabIndex = 12;
@@ -207,7 +198,7 @@ namespace PROG_Task1
             // label7
             // 
             this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
-            this.label7.Location = new System.Drawing.Point(445, 262);
+            this.label7.Location = new System.Drawing.Point(445, 437);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 46);
             this.label7.TabIndex = 13;
@@ -216,17 +207,29 @@ namespace PROG_Task1
             // label8
             // 
             this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
-            this.label8.Location = new System.Drawing.Point(445, 384);
+            this.label8.Location = new System.Drawing.Point(445, 587);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 46);
             this.label8.TabIndex = 14;
             this.label8.Visible = false;
             // 
+            // descripBox
+            // 
+            this.descripBox.BackColor = System.Drawing.Color.Tomato;
+            this.descripBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripBox.FormattingEnabled = true;
+            this.descripBox.ItemHeight = 25;
+            this.descripBox.Location = new System.Drawing.Point(867, 91);
+            this.descripBox.Name = "descripBox";
+            this.descripBox.Size = new System.Drawing.Size(916, 579);
+            this.descripBox.TabIndex = 5;
+            // 
             // Identifying_Areas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1505, 838);
+            this.BackColor = System.Drawing.Color.DarkSalmon;
+            this.ClientSize = new System.Drawing.Size(1817, 842);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -261,7 +264,6 @@ namespace PROG_Task1
         private System.Windows.Forms.Label second;
         private System.Windows.Forms.Label third;
         private System.Windows.Forms.Label fourth;
-        private System.Windows.Forms.ListBox descripBox;
         private System.Windows.Forms.Button CHECK;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -271,5 +273,6 @@ namespace PROG_Task1
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ListBox descripBox;
     }
 }

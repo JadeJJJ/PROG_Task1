@@ -37,11 +37,11 @@ namespace PROG_Task1
             callNums.Add(10, "900");
 
             descrips.Add(1,"Knowledge about many things");
-            descrips.Add(2,"Systematic study of the interplay between philosophical concerns in the study of cognition");
+            descrips.Add(2,"Study of the interplay between philosophical concerns in the study of cognition");
             descrips.Add(3,"Faith in a higher power");
             descrips.Add(4,"The study of human behaviour and social aspects");
             descrips.Add(5,"How humans express verbally/writtenly");
-            descrips.Add(6,"Study of the structure and behaviour of the physical and natural world via observation/experiment");
+            descrips.Add(6,"Study of the behaviour of the physical/natural world via observation/experiment");
             descrips.Add(7,"Application of scientific knowledge for practical purposes");
             descrips.Add(8,"Provide services to meet varied cultural");
             descrips.Add(9,"Imaginative works of poetry");
