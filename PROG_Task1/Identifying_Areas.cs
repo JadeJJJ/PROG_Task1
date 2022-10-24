@@ -66,9 +66,9 @@ namespace PROG_Task1
         {
             populate();
 
-            foreach (KeyValuePair<int, String> f in descrips)
+            foreach (KeyValuePair<int, String> d in descrips)
             {
-                descripBox.Items.Add(f.Value);
+                descripBox.Items.Add(d.Value);
             }
 
             callNumberCreate();
@@ -155,15 +155,17 @@ namespace PROG_Task1
 
                 if (count == 1)
                 {
-                    first.Text = "Won " + callNums[callNum];
+                    first.Text = callNums[callNum];
+                    label1.Visible = true;
                     second.Text = "-> " + callNums[callNum2];
 
 
                 }
                 else if (count == 2)
                 {
-                    second.Text = "Won " + callNums[callNum2];
-                    third.Text = "-> " + callNums[callNum3];
+                    second.Text = callNums[callNum2];
+                    label2.Visible = true;
+                    third.Text = callNums[callNum3];
 
 
                 }
@@ -171,14 +173,16 @@ namespace PROG_Task1
                 else if (count == 3)
                 {
 
-                    third.Text = "Won " + callNums[callNum3];
+                    third.Text = callNums[callNum3];
+                    label3.Visible = true;
                     fourth.Text = "-> " + callNums[callNum4];
 
                 }
 
                 else if (count == 4)
                 {
-                    fourth.Text = "Won " + callNums[callNum4];
+                    fourth.Text = callNums[callNum4];
+                    label4.Visible = true;
                     //Form1 f = new Form1();
                     // f.Show();
                     //this.Hide();
@@ -196,14 +200,16 @@ namespace PROG_Task1
 
                 if (count == 1)
                 {
-                    first.Text = "Lose " + callNums[callNum];
+                    first.Text = callNums[callNum];
+                    label5.Visible = true;
                     second.Text = "-> " + callNums[callNum2];
 
 
                 }
                 else if (count == 2)
                 {
-                    second.Text = "Lose " + callNums[callNum2];
+                    second.Text = callNums[callNum2];
+                    label6.Visible = true;
                     third.Text = "-> " + callNums[callNum3];
 
 
@@ -212,14 +218,16 @@ namespace PROG_Task1
                 else if (count == 3)
                 {
 
-                    third.Text = "Lose " + callNums[callNum3];
+                    third.Text = callNums[callNum3];
+                    label7.Visible = true;
                     fourth.Text = "-> " + callNums[callNum4];
 
                 }
 
                 else if (count == 4)
                 {
-                    fourth.Text = "Lose -> " + callNums[callNum4];
+                    fourth.Text = callNums[callNum4];
+                    label8.Visible = true;
 
                     if (win != 4)
                     {

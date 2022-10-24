@@ -29,6 +29,7 @@ namespace PROG_Task1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Identifying_Areas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuBTN = new System.Windows.Forms.Button();
             this.resetBTN = new System.Windows.Forms.Button();
@@ -39,6 +40,14 @@ namespace PROG_Task1
             this.fourth = new System.Windows.Forms.Label();
             this.descripBox = new System.Windows.Forms.ListBox();
             this.CHECK = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,7 +142,7 @@ namespace PROG_Task1
             // 
             // CHECK
             // 
-            this.CHECK.Location = new System.Drawing.Point(426, 699);
+            this.CHECK.Location = new System.Drawing.Point(561, 712);
             this.CHECK.Name = "CHECK";
             this.CHECK.Size = new System.Drawing.Size(117, 44);
             this.CHECK.TabIndex = 6;
@@ -141,11 +150,91 @@ namespace PROG_Task1
             this.CHECK.UseVisualStyleBackColor = true;
             this.CHECK.Click += new System.EventHandler(this.CHECK_Click);
             // 
+            // label1
+            // 
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.Location = new System.Drawing.Point(324, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 46);
+            this.label1.TabIndex = 7;
+            this.label1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.Location = new System.Drawing.Point(324, 139);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 46);
+            this.label2.TabIndex = 8;
+            this.label2.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
+            this.label3.Location = new System.Drawing.Point(324, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 46);
+            this.label3.TabIndex = 9;
+            this.label3.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+            this.label4.Location = new System.Drawing.Point(324, 384);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 46);
+            this.label4.TabIndex = 10;
+            this.label4.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.Location = new System.Drawing.Point(445, 66);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 46);
+            this.label5.TabIndex = 11;
+            this.label5.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+            this.label6.Location = new System.Drawing.Point(445, 139);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 46);
+            this.label6.TabIndex = 12;
+            this.label6.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
+            this.label7.Location = new System.Drawing.Point(445, 262);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 46);
+            this.label7.TabIndex = 13;
+            this.label7.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
+            this.label8.Location = new System.Drawing.Point(445, 384);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(56, 46);
+            this.label8.TabIndex = 14;
+            this.label8.Visible = false;
+            // 
             // Identifying_Areas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1505, 838);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CHECK);
             this.Controls.Add(this.descripBox);
             this.Controls.Add(this.fourth);
@@ -174,5 +263,13 @@ namespace PROG_Task1
         private System.Windows.Forms.Label fourth;
         private System.Windows.Forms.ListBox descripBox;
         private System.Windows.Forms.Button CHECK;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
