@@ -29,6 +29,7 @@ namespace PROG_Task1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Identifying_Areas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuBTN = new System.Windows.Forms.Button();
@@ -48,12 +49,19 @@ namespace PROG_Task1
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.descripBox = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.menuBTN);
             this.panel1.Controls.Add(this.resetBTN);
             this.panel1.Controls.Add(this.startBTN);
@@ -61,7 +69,7 @@ namespace PROG_Task1
             this.panel1.Location = new System.Drawing.Point(0, 767);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1817, 75);
+            this.panel1.Size = new System.Drawing.Size(1540, 75);
             this.panel1.TabIndex = 0;
             // 
             // menuBTN
@@ -92,8 +100,9 @@ namespace PROG_Task1
             this.startBTN.Name = "startBTN";
             this.startBTN.Size = new System.Drawing.Size(100, 28);
             this.startBTN.TabIndex = 0;
-            this.startBTN.Text = "Start";
+            this.startBTN.Text = "START";
             this.startBTN.UseVisualStyleBackColor = true;
+            this.startBTN.Click += new System.EventHandler(this.startBTN_Click);
             // 
             // first
             // 
@@ -102,7 +111,6 @@ namespace PROG_Task1
             this.first.Name = "first";
             this.first.Size = new System.Drawing.Size(339, 54);
             this.first.TabIndex = 1;
-            this.first.Text = "label1";
             // 
             // second
             // 
@@ -111,7 +119,6 @@ namespace PROG_Task1
             this.second.Name = "second";
             this.second.Size = new System.Drawing.Size(339, 58);
             this.second.TabIndex = 2;
-            this.second.Text = "label1";
             // 
             // third
             // 
@@ -120,7 +127,6 @@ namespace PROG_Task1
             this.third.Name = "third";
             this.third.Size = new System.Drawing.Size(339, 58);
             this.third.TabIndex = 3;
-            this.third.Text = "label1";
             // 
             // fourth
             // 
@@ -129,7 +135,6 @@ namespace PROG_Task1
             this.fourth.Name = "fourth";
             this.fourth.Size = new System.Drawing.Size(339, 58);
             this.fourth.TabIndex = 4;
-            this.fourth.Text = "label1";
             // 
             // CHECK
             // 
@@ -139,6 +144,7 @@ namespace PROG_Task1
             this.CHECK.TabIndex = 6;
             this.CHECK.Text = "CHECK";
             this.CHECK.UseVisualStyleBackColor = true;
+            this.CHECK.Visible = false;
             this.CHECK.Click += new System.EventHandler(this.CHECK_Click);
             // 
             // label1
@@ -224,12 +230,51 @@ namespace PROG_Task1
             this.descripBox.Size = new System.Drawing.Size(916, 579);
             this.descripBox.TabIndex = 5;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(830, 7);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(57, 57);
+            this.button2.TabIndex = 22;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(903, 33);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 25);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Timer:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(988, 27);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(158, 31);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "00:00:00.00";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Identifying_Areas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(1817, 842);
+            this.ClientSize = new System.Drawing.Size(1540, 842);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -250,6 +295,7 @@ namespace PROG_Task1
             this.Text = "Identifying_Areas";
             this.Load += new System.EventHandler(this.Identifying_Areas_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -274,5 +320,9 @@ namespace PROG_Task1
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ListBox descripBox;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Timer timer1;
     }
 }

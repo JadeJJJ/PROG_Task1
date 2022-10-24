@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace PROG_Task1
 {
     public partial class Identifying_Areas : Form
     {
+        Stopwatch stopwatch;
         int count = 0;
-        int win = 0;
+        int correct = 0;
 
         IDictionary<int, string> callNums = new Dictionary<int, string>();
         IDictionary<int, string> descrips = new Dictionary<int, string>();
@@ -55,6 +57,11 @@ namespace PROG_Task1
             InitializeComponent();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label10.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
+        }
+
         private void menuBTN_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
@@ -64,6 +71,7 @@ namespace PROG_Task1
 
         private void Identifying_Areas_Load(object sender, EventArgs e)
         {
+            stopwatch = new Stopwatch();
             populate();
 
             foreach (KeyValuePair<int, String> d in descrips)
@@ -145,19 +153,19 @@ namespace PROG_Task1
             }
         }
 
-        public void ASSESS(int anikey, int key)
+        public void ASSESS(int callkey, int key)
         {
 
 
-            if (anikey == key)
+            if (callkey == key)
             {
-                win++;
+                correct++;
 
                 if (count == 1)
                 {
                     first.Text = callNums[callNum];
                     label1.Visible = true;
-                    second.Text = "-> " + callNums[callNum2];
+                    second.Text = ">" + callNums[callNum2]+"<";
 
 
                 }
@@ -165,7 +173,7 @@ namespace PROG_Task1
                 {
                     second.Text = callNums[callNum2];
                     label2.Visible = true;
-                    third.Text = callNums[callNum3];
+                    third.Text = ">"+callNums[callNum3]+"<";
 
 
                 }
@@ -175,7 +183,7 @@ namespace PROG_Task1
 
                     third.Text = callNums[callNum3];
                     label3.Visible = true;
-                    fourth.Text = "-> " + callNums[callNum4];
+                    fourth.Text = ">" + callNums[callNum4]+"<";
 
                 }
 
@@ -202,7 +210,7 @@ namespace PROG_Task1
                 {
                     first.Text = callNums[callNum];
                     label5.Visible = true;
-                    second.Text = "-> " + callNums[callNum2];
+                    second.Text = ">" + callNums[callNum2]+"<";
 
 
                 }
@@ -210,7 +218,7 @@ namespace PROG_Task1
                 {
                     second.Text = callNums[callNum2];
                     label6.Visible = true;
-                    third.Text = "-> " + callNums[callNum3];
+                    third.Text = ">" + callNums[callNum3]+"<";
 
 
                 }
@@ -220,7 +228,7 @@ namespace PROG_Task1
 
                     third.Text = callNums[callNum3];
                     label7.Visible = true;
-                    fourth.Text = "-> " + callNums[callNum4];
+                    fourth.Text = ">" + callNums[callNum4]+"<";
 
                 }
 
@@ -229,7 +237,7 @@ namespace PROG_Task1
                     fourth.Text = callNums[callNum4];
                     label8.Visible = true;
 
-                    if (win != 4)
+                    if (correct != 4)
                     {
                         MessageBox.Show("You LOOSE ! TRY AGAIN");
 
@@ -251,6 +259,25 @@ namespace PROG_Task1
 
             }
         }
+
+        private void startBTN_Click(object sender, EventArgs e)
+        {
+
+            
+            //When the user presses start the Timer starts
+            stopwatch.Start();
+            if (startBTN.Text.Equals("START"))
+            {
+                CHECK.Visible = true;
+                startBTN.Text = "STOP";
+            }
+            else
+            {
+                stopwatch.Stop();
+            }
+        }
+
+        
     }
 
 }
