@@ -53,6 +53,9 @@ namespace PROG_Task1
             this.label8 = new System.Windows.Forms.Label();
             this.descripBox = new System.Windows.Forms.ListBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +69,7 @@ namespace PROG_Task1
             this.panel1.Controls.Add(this.resetBTN);
             this.panel1.Controls.Add(this.startBTN);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 767);
+            this.panel1.Location = new System.Drawing.Point(0, 762);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1861, 75);
@@ -77,7 +80,7 @@ namespace PROG_Task1
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(988, 27);
+            this.label10.Location = new System.Drawing.Point(1210, 33);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(158, 31);
@@ -88,7 +91,7 @@ namespace PROG_Task1
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(903, 33);
+            this.label9.Location = new System.Drawing.Point(1148, 39);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 25);
@@ -99,7 +102,7 @@ namespace PROG_Task1
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(829, 7);
+            this.button2.Location = new System.Drawing.Point(1093, 14);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(57, 57);
@@ -141,6 +144,7 @@ namespace PROG_Task1
             // 
             // first
             // 
+            this.first.BackColor = System.Drawing.Color.DarkOrchid;
             this.first.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.first.Location = new System.Drawing.Point(11, 166);
             this.first.Name = "first";
@@ -149,6 +153,7 @@ namespace PROG_Task1
             // 
             // second
             // 
+            this.second.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.second.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.second.Location = new System.Drawing.Point(11, 290);
             this.second.Name = "second";
@@ -157,6 +162,7 @@ namespace PROG_Task1
             // 
             // third
             // 
+            this.third.BackColor = System.Drawing.Color.CornflowerBlue;
             this.third.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.third.Location = new System.Drawing.Point(11, 437);
             this.third.Name = "third";
@@ -165,6 +171,7 @@ namespace PROG_Task1
             // 
             // fourth
             // 
+            this.fourth.BackColor = System.Drawing.Color.Crimson;
             this.fourth.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fourth.Location = new System.Drawing.Point(12, 587);
             this.fourth.Name = "fourth";
@@ -173,7 +180,7 @@ namespace PROG_Task1
             // 
             // CHECK
             // 
-            this.CHECK.Location = new System.Drawing.Point(561, 711);
+            this.CHECK.Location = new System.Drawing.Point(662, 719);
             this.CHECK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CHECK.Name = "CHECK";
             this.CHECK.Size = new System.Drawing.Size(117, 44);
@@ -272,12 +279,43 @@ namespace PROG_Task1
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(267, 33);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(234, 38);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Column A";
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(1134, 33);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(234, 38);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Column B";
+            // 
+            // label13
+            // 
+            this.label13.Location = new System.Drawing.Point(710, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(16, 754);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n" +
+    "|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n";
+            // 
             // Identifying_Areas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(1861, 842);
+            this.ClientSize = new System.Drawing.Size(1861, 837);
+            this.Controls.Add(this.CHECK);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -286,7 +324,6 @@ namespace PROG_Task1
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CHECK);
             this.Controls.Add(this.descripBox);
             this.Controls.Add(this.fourth);
             this.Controls.Add(this.third);
@@ -327,5 +364,8 @@ namespace PROG_Task1
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
