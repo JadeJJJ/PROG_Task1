@@ -22,7 +22,7 @@ namespace PROG_Task1
         IDictionary<int, string> descrips = new Dictionary<int, string>();
         
         //Used to choose random Numbers
-        Random rnd = new Random();
+        Random rand = new Random();
         int callNum;
         int callNum2;
         int callNum3;
@@ -98,27 +98,27 @@ namespace PROG_Task1
         //Uses the random function to select a number from 1 - 10 which coreelates with the Call number stored in the Dictionary
         public void callNumberCreate()
         {
-            callNum = rnd.Next(9) + 1;
+            callNum = rand.Next(9) + 1;
 
             
             //If the Call Number selected for the 2nd question is the same,it tries again.
-            callNum2 = rnd.Next(9) + 1;
+            callNum2 = rand.Next(9) + 1;
             if(callNum2 == callNum)
             {
-                callNum2 = rnd.Next(9) + 1;
+                callNum2 = rand.Next(9) + 1;
             }
 
 
-            callNum3 = rnd.Next(9) + 1;
+            callNum3 = rand.Next(9) + 1;
             if(callNum3 == callNum2 || callNum3 == callNum)
             {
-                callNum3 = rnd.Next(9) + 1;
+                callNum3 = rand.Next(9) + 1;
             }
 
-            callNum4 = rnd.Next(9) + 1;
+            callNum4 = rand.Next(9) + 1;
             if(callNum4==callNum3 || callNum4==callNum2 || callNum4 == callNum)
             {
-                callNum4 = rnd.Next(9) + 1;
+                callNum4 = rand.Next(9) + 1;
             }
 
             //Populates the Textboxes with the random Call Numbers e.g 000
