@@ -12,13 +12,16 @@ using System.Diagnostics;
 namespace PROG_Task1
 {
     public partial class Identifying_Areas : Form
-    {
+    {   //Allows the stopwatch function to work
         Stopwatch stopwatch;
         int count = 0;
-        int correct = 0;
-
+        
+        //Call Number Dicitonary
         IDictionary<int, string> callNums = new Dictionary<int, string>();
+        //Descriptions Dictionary
         IDictionary<int, string> descrips = new Dictionary<int, string>();
+        
+        //Used to choose random Numbers
         Random rnd = new Random();
         int callNum;
         int callNum2;
@@ -69,6 +72,7 @@ namespace PROG_Task1
         //When the user clicks the menu button,they are directed to the menu/selection screen
         private void menuBTN_Click(object sender, EventArgs e)
         {
+            //When the user Clicks Menu,they are directed to the Home/selection Page
             Form1 f1 = new Form1();
             f1.Show();
             this.Hide();
@@ -77,8 +81,11 @@ namespace PROG_Task1
         private void Identifying_Areas_Load(object sender, EventArgs e)
         {
             stopwatch = new Stopwatch();
+            
+            //The dictionaries are populated with the Call numbers and Descriptions
             populate();
 
+            // The Descriptions are added to the listBox
             foreach (KeyValuePair<int, String> d in descrips)
             {
                 descripBox.Items.Add(d.Value);
@@ -122,11 +129,12 @@ namespace PROG_Task1
 
         }
 
-        //Whene
+        //Whenever the user selects a description, they use the Click Button to check the answer
         private void CHECK_Click(object sender, EventArgs e)
         {
             
             count++;
+            //If no description has been selected and Message will pop up
             if (descripBox.SelectedIndex == -1)
             {
                 MessageBox.Show("Select A Description");
@@ -139,25 +147,18 @@ namespace PROG_Task1
                 if (count == 1)
                 {
                     ASSESS(callNum, key);
-
                 }
                 else if (count == 2)
                 {
                     ASSESS(callNum2, key);
-
                 }
-
                 else if (count == 3)
                 {
                     ASSESS(callNum3, key);
-
                 }
-
                 else
                 {
                     ASSESS(callNum4, key);
-
-
                 }
 
             }
@@ -169,32 +170,26 @@ namespace PROG_Task1
 
             if (callkey == key)
             {
-                correct++;
+                
 
                 if (count == 1)
                 {
                     first.Text = callNums[callNum];
                     label1.Visible = true;
                     second.Text = ">" + callNums[callNum2]+"<";
-
-
                 }
                 else if (count == 2)
                 {
                     second.Text = callNums[callNum2];
                     label2.Visible = true;
                     third.Text = ">"+callNums[callNum3]+"<";
-
-
                 }
 
                 else if (count == 3)
                 {
-
                     third.Text = callNums[callNum3];
                     label3.Visible = true;
                     fourth.Text = ">" + callNums[callNum4]+"<";
-
                 }
 
                 else if (count == 4)
@@ -203,8 +198,6 @@ namespace PROG_Task1
                     label4.Visible = true;
                 }
              }
-
-
             else
             {
 
@@ -213,25 +206,19 @@ namespace PROG_Task1
                     first.Text = callNums[callNum];
                     label5.Visible = true;
                     second.Text = ">" + callNums[callNum2]+"<";
-
-
                 }
                 else if (count == 2)
                 {
                     second.Text = callNums[callNum2];
                     label6.Visible = true;
                     third.Text = ">" + callNums[callNum3]+"<";
-
-
                 }
 
                 else if (count == 3)
                 {
-
                     third.Text = callNums[callNum3];
                     label7.Visible = true;
                     fourth.Text = ">" + callNums[callNum4]+"<";
-
                 }
 
                 else if (count == 4)
@@ -240,35 +227,12 @@ namespace PROG_Task1
                     label8.Visible = true;
                     stopwatch.Stop();
                     startBTN.Text = "STOP";
-
-
-                  /*  if (correct != 4)
-                    {
-                        MessageBox.Show("You LOOSE ! TRY AGAIN");
-
-                        Form1 f = new Form1();
-                        f.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("You WON ! PLAY AGAIN");
-                        Form1 f = new Form1();
-                        f.Show();
-                        this.Hide();
-                    }*/
-
                 }
-
-
-
-            }
+              }
         }
 
         private void startBTN_Click(object sender, EventArgs e)
         {
-
-            
             //When the user presses start the Timer starts
             stopwatch.Start();
             if (startBTN.Text.Equals("START"))
@@ -291,7 +255,6 @@ namespace PROG_Task1
             this.Hide();
         }
     }
-
 }
 //----------------------------------------------------END 0F PR0GR@M-------------------------------------------------------------------------------------------------
 //---------------------------------------------By @J@DE J@ll@HR$-----------------------------------------------------------------------------------------------------
