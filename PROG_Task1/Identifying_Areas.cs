@@ -27,6 +27,7 @@ namespace PROG_Task1
 
         public void populate() 
         {
+            //Populating the Call number Dictionary
             callNums.Add(1, "000");
             callNums.Add(2, "100");
             callNums.Add(3, "200");
@@ -38,6 +39,7 @@ namespace PROG_Task1
             callNums.Add(9, "800");
             callNums.Add(10, "900");
 
+            //Populating the description dictionary
             descrips.Add(1,"Knowledge about many things");
             descrips.Add(2,"Study of the interplay between philosophical concerns in the study of cognition");
             descrips.Add(3,"Faith in a higher power");
@@ -57,11 +59,14 @@ namespace PROG_Task1
             InitializeComponent();
         }
 
+        //Formats the Tabel to act as a stopwatch
         private void timer1_Tick(object sender, EventArgs e)
         {
             label10.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
         }
 
+
+        //When the user clicks the menu button,they are directed to the menu/selection screen
         private void menuBTN_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
@@ -82,11 +87,14 @@ namespace PROG_Task1
             callNumberCreate();
         }
 
+
+        //Uses the random function to select a number from 1 - 10 which coreelates with the Call number stored in the Dictionary
         public void callNumberCreate()
         {
             callNum = rnd.Next(9) + 1;
 
             
+            //If the Call Number selected for the 2nd question is the same,it tries again.
             callNum2 = rnd.Next(9) + 1;
             if(callNum2 == callNum)
             {
@@ -106,7 +114,7 @@ namespace PROG_Task1
                 callNum4 = rnd.Next(9) + 1;
             }
 
-
+            //Populates the Textboxes with the random Call Numbers e.g 000
             first.Text = callNums[callNum];
             second.Text = callNums[callNum2];
             third.Text = callNums[callNum3];
@@ -114,6 +122,7 @@ namespace PROG_Task1
 
         }
 
+        //Whene
         private void CHECK_Click(object sender, EventArgs e)
         {
             count++;
@@ -236,6 +245,9 @@ namespace PROG_Task1
                 {
                     fourth.Text = callNums[callNum4];
                     label8.Visible = true;
+                    stopwatch.Stop();
+                    startBTN.Text = "STOP";
+
 
                     if (correct != 4)
                     {
@@ -268,6 +280,7 @@ namespace PROG_Task1
             stopwatch.Start();
             if (startBTN.Text.Equals("START"))
             {
+                //User can only start playing after the timer has started,once started the Button will become usable.
                 CHECK.Visible = true;
                 startBTN.Text = "STOP";
             }
@@ -281,3 +294,5 @@ namespace PROG_Task1
     }
 
 }
+//----------------------------------------------------END 0F PR0GR@M-------------------------------------------------------------------------------------------------
+//---------------------------------------------By @J@DE J@ll@HR$-----------------------------------------------------------------------------------------------------
