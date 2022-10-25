@@ -75,8 +75,14 @@
     <Compile Include="Replacing_Books.Designer.cs">
       <DependentUpon>Replacing_Books.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Finding_Call_Numbers.resx">
+      <DependentUpon>Finding_Call_Numbers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Identifying_Areas.resx">
+      <DependentUpon>Identifying_Areas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

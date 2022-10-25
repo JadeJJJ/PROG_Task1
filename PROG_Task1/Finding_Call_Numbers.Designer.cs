@@ -29,10 +29,18 @@ namespace PROG_Task1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Finding_Call_Numbers
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Finding_Call_Numbers";
             this.Text = "Finding_Call_Numbers";
+            this.Load += new System.EventHandler(this.Finding_Call_Numbers_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
