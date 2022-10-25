@@ -125,6 +125,7 @@ namespace PROG_Task1
         //Whene
         private void CHECK_Click(object sender, EventArgs e)
         {
+            
             count++;
             if (descripBox.SelectedIndex == -1)
             {
@@ -200,16 +201,8 @@ namespace PROG_Task1
                 {
                     fourth.Text = callNums[callNum4];
                     label4.Visible = true;
-                    //Form1 f = new Form1();
-                    // f.Show();
-                    //this.Hide();
-
-
-
                 }
-
-
-            }
+             }
 
 
             else
@@ -249,7 +242,7 @@ namespace PROG_Task1
                     startBTN.Text = "STOP";
 
 
-                    if (correct != 4)
+                  /*  if (correct != 4)
                     {
                         MessageBox.Show("You LOOSE ! TRY AGAIN");
 
@@ -263,7 +256,7 @@ namespace PROG_Task1
                         Form1 f = new Form1();
                         f.Show();
                         this.Hide();
-                    }
+                    }*/
 
                 }
 
@@ -290,7 +283,13 @@ namespace PROG_Task1
             }
         }
 
-        
+        private void resetBTN_Click(object sender, EventArgs e)
+        {
+            stopwatch.Reset();
+            Identifying_Areas f2 = new Identifying_Areas();
+            f2.Show();
+            this.Hide();
+        }
     }
 
 }
