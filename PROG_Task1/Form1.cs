@@ -34,7 +34,9 @@ namespace PROG_Task1
 
         private void callNum_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Finding Call Numbers Has Not Been Implemetned Yet!!");
+            Finding_Call_Numbers fcn = new Finding_Call_Numbers();
+            fcn.Show();
+            this.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
