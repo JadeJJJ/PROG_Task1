@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
     <Compile Include="Finding_Call_Numbers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +76,7 @@
     <Compile Include="Replacing_Books.Designer.cs">
       <DependentUpon>Replacing_Books.cs</DependentUpon>
     </Compile>
+    <Compile Include="tree.cs" />
     <EmbeddedResource Include="Finding_Call_Numbers.resx">
       <DependentUpon>Finding_Call_Numbers.cs</DependentUpon>
     </EmbeddedResource>

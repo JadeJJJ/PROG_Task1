@@ -39,6 +39,11 @@ namespace PROG_Task1
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Question = new System.Windows.Forms.Label();
+            this.o1 = new System.Windows.Forms.Label();
+            this.o2 = new System.Windows.Forms.Label();
+            this.o3 = new System.Windows.Forms.Label();
+            this.o4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,11 +129,60 @@ namespace PROG_Task1
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // Question
+            // 
+            this.Question.Location = new System.Drawing.Point(80, 110);
+            this.Question.Name = "Question";
+            this.Question.Size = new System.Drawing.Size(100, 23);
+            this.Question.TabIndex = 1;
+            this.Question.Text = "label3";
+            // 
+            // o1
+            // 
+            this.o1.Location = new System.Drawing.Point(625, 85);
+            this.o1.Name = "o1";
+            this.o1.Size = new System.Drawing.Size(296, 47);
+            this.o1.TabIndex = 2;
+            this.o1.Text = "label3";
+            this.o1.Click += new System.EventHandler(this.o1_Click);
+            // 
+            // o2
+            // 
+            this.o2.Location = new System.Drawing.Point(625, 156);
+            this.o2.Name = "o2";
+            this.o2.Size = new System.Drawing.Size(296, 45);
+            this.o2.TabIndex = 3;
+            this.o2.Text = "label4";
+            this.o2.Click += new System.EventHandler(this.o2_Click);
+            // 
+            // o3
+            // 
+            this.o3.Location = new System.Drawing.Point(625, 222);
+            this.o3.Name = "o3";
+            this.o3.Size = new System.Drawing.Size(296, 45);
+            this.o3.TabIndex = 4;
+            this.o3.Text = "label5";
+            this.o3.Click += new System.EventHandler(this.o3_Click);
+            // 
+            // o4
+            // 
+            this.o4.Location = new System.Drawing.Point(625, 304);
+            this.o4.Name = "o4";
+            this.o4.Size = new System.Drawing.Size(296, 45);
+            this.o4.TabIndex = 5;
+            this.o4.Text = "label6";
+            this.o4.Click += new System.EventHandler(this.o4_Click);
+            // 
             // Finding_Call_Numbers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 542);
+            this.Controls.Add(this.o4);
+            this.Controls.Add(this.o3);
+            this.Controls.Add(this.o2);
+            this.Controls.Add(this.o1);
+            this.Controls.Add(this.Question);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Finding_Call_Numbers";
@@ -150,5 +204,10 @@ namespace PROG_Task1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label Question;
+        private System.Windows.Forms.Label o1;
+        private System.Windows.Forms.Label o2;
+        private System.Windows.Forms.Label o3;
+        private System.Windows.Forms.Label o4;
     }
 }

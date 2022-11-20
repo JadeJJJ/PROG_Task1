@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace PROG_Task1
 {
@@ -34,14 +36,22 @@ namespace PROG_Task1
 
         private void callNum_btn_Click(object sender, EventArgs e)
         {
-            Finding_Call_Numbers fcn = new Finding_Call_Numbers();
-            fcn.Show();
-            this.Hide();
+            if (File.Exists(Database.textFile))
+            {
+                Finding_Call_Numbers fcn = new Finding_Call_Numbers();
+                fcn.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("CHECK FILE PATH");
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            Database.readData();
         }
     }
 }

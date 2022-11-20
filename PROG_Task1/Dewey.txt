@@ -1,0 +1,172 @@
+﻿000 General Knowledge
+
+ 
+
+ 020 Library and Information sciences
+  021 Library relationships
+  022 Administration of physical plant
+  023 Personnel management
+  024 Miscellany
+
+030 Encyclopedias and books of facts
+  031 Encyclopedias in American English
+  032 Encyclopedias in English
+  033 Encyclopedias in other Germanic languages
+  034 Encyclopedias in French, Occitan, and Catalan
+
+100 Philosophy and psychology
+  
+
+
+ 120 Epistemology
+  121 Theory of knowledge
+  122 Causation
+  123 Determinism and indeterminism
+  124 Teleology
+
+ 130 Parapsychology and occultism
+  131 Parapsychological and occult methods
+  132 Mental derangements
+  133 parapsychology and occultism
+  134 Mesmerism
+
+
+
+
+200 Religion
+
+ 220 The Bible
+  221 Old Testament 
+  222 Historical Books
+  223 Poetic Books
+  224 Prophetic books
+  
+ 230 Christianity
+  231 God 
+  232 Jesus Christ
+  233 Humankind
+  234 Salvation and grace
+
+
+300 Social Sciences
+
+
+320 Political science
+  321 Systems of governments
+  322 Relation of state
+  323 Civil and political rights
+  324 The political process
+
+330 Economics
+  331 Labor economics
+  332 Financial economics
+  333 Economics of land and energy
+  334 Cooperatives
+
+
+400 Language
+
+420 English and Old English
+  421 Writing System
+  422 Etymology of English
+  423 Dictionaries of English
+  424 English thesauruses
+
+430 German and related languages
+  431 Writing systems
+  432 Etymology of German
+  433 Dictionaries of German
+  434 Synonyms
+  
+
+
+500 Science 
+
+
+
+520 Astronomy
+ 521 Celestial mechanics
+ 522 Techniques
+ 523 Specific celestial bodies
+ 524 Maps
+
+
+530 Physics 
+ 531 Classical mechanics 
+ 532 Fluid mechanics 
+ 533 Gas mechanics 
+ 534 Sound
+
+600 Technology 
+
+  
+620 Engineering
+  621 Applied physics
+  622 Mining
+  623 Military
+  624 Civil engineering
+
+630 Agriculture
+ 631 Specific techniques
+ 632 Plant injuries
+ 633 Field and plantation
+ 634 Orchards
+
+
+ 
+700 Arts and Recreation 
+
+
+720 Architecture
+ 721 Architectural materials 
+ 722 Architecture from c. 300
+ 723 Architecture from c. 300 - 1399
+ 724 Architecture from 1400	
+
+
+730 Sculpture
+ 731 Processess of Sculptures
+ 732 Early Sculptures
+ 733 Greek,Roman Sculptures
+ 734 Sculpture form 50 - 1399
+
+
+ 
+
+800 Literature
+
+820 English 
+ 821 English Poetry 
+ 822 English Drama 
+ 823 English fiction
+ 824 English Essays
+
+830 German 
+ 831 German Poetry 
+ 832 German Drama 
+ 833 German fiction
+ 834 German Essays
+
+
+900 History and Geography 
+
+920 Biography and genealogy
+ 921 Biography of Philosophy
+ 922 Biography of Theology
+ 923 Biography of sociology
+ 924 Biography of philiology
+
+930 Acient History
+ 931 Chinese
+ 932 Egyptian
+ 933 Jewish
+ 934 Indian
+ 
+  
+
+ 
+
+
+
+
+
