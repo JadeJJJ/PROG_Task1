@@ -148,6 +148,7 @@ namespace PROG_Task1
             this.o1.TabIndex = 2;
             this.o1.Text = "label3";
             this.o1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.o1.Visible = false;
             this.o1.Click += new System.EventHandler(this.o1_Click);
             // 
             // o2
@@ -159,6 +160,7 @@ namespace PROG_Task1
             this.o2.TabIndex = 3;
             this.o2.Text = "label4";
             this.o2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.o2.Visible = false;
             this.o2.Click += new System.EventHandler(this.o2_Click);
             // 
             // o3
@@ -170,6 +172,7 @@ namespace PROG_Task1
             this.o3.TabIndex = 4;
             this.o3.Text = "label5";
             this.o3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.o3.Visible = false;
             this.o3.Click += new System.EventHandler(this.o3_Click);
             // 
             // o4
@@ -181,6 +184,7 @@ namespace PROG_Task1
             this.o4.TabIndex = 5;
             this.o4.Text = "label6";
             this.o4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.o4.Visible = false;
             this.o4.Click += new System.EventHandler(this.o4_Click);
             // 
             // Finding_Call_Numbers

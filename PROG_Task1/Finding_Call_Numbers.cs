@@ -96,6 +96,10 @@ namespace PROG_Task1
             stopwatch.Start();
             if (start_btn.Text.Equals("START"))
             {
+                o1.Visible = true;
+                o2.Visible = true;
+                o3.Visible = true;
+                o4.Visible = true;
 
                 start_btn.Text = "STOP";
             }
@@ -169,7 +173,8 @@ namespace PROG_Task1
             {
                 if (l == o2)
                 {
-                    MessageBox.Show("CONGRATS! GAME ENDED");
+                    stopwatch.Stop();
+                    MessageBox.Show("CONGRATS! GAME ENDED\n"+string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed));
                     Finding_Call_Numbers fcn = new Finding_Call_Numbers();
                     fcn.Show();
                     this.Hide();
