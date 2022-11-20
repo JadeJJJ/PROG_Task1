@@ -174,7 +174,7 @@ namespace PROG_Task1
                 if (l == o2)
                 {
                     stopwatch.Stop();
-                    MessageBox.Show("CONGRATS! GAME ENDED\n"+string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed));
+                    MessageBox.Show("Winner!!\n"+string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed));
                     Finding_Call_Numbers fcn = new Finding_Call_Numbers();
                     fcn.Show();
                     this.Hide();
