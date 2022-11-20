@@ -75,27 +75,36 @@ namespace PROG_Task1
         }
 
 
-       //Formats the Timer used in the application
+        /// <summary>
+        /// Formats the Timer used in the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
         }
 
+        /// <summary>
+        /// Intialize the StopWatch on load
+        /// </summary>
         private void Replacing_Books_Load(object sender, EventArgs e)
         {
             stopwatch = new Stopwatch();
         }
 
-
+        /// <summary>
+        /// When the user presses start the Timer starts and the boxes will become draggable
+        /// </summary>
         private void start_btn_Click(object sender, EventArgs e)
         {
-            //When the user presses start the Timer starts
+            
             stopwatch.Start();
 
             if (start_btn.Text.Equals("START"))
             {
 
-                //When the user clicks start, the books are draggable
+                
 
                 ControlExtension.Draggable(textbox1, true);
                 ControlExtension.Draggable(textbox2, true);
@@ -192,7 +201,9 @@ namespace PROG_Task1
         }
 
 
-        //When the user wants to restart the application,resets the timer and creates new books to sort
+        /// <summary>
+        /// Resets the timer and creates new books to sort
+        /// </summary>
         private void reset_btn_Click(object sender, EventArgs e)
         {
             stopwatch.Reset();
@@ -201,7 +212,9 @@ namespace PROG_Task1
             this.Hide();
         }
 
-        //If the user click,this takes them back to the selection screen
+        /// <summary>
+        /// User is taken back to the Menu/Selection Page
+        /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
