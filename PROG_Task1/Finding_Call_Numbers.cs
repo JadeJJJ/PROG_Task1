@@ -14,19 +14,27 @@ namespace PROG_Task1
     public partial class Finding_Call_Numbers : Form
     {
         int ques;
+
+        //Random
         Random rand = new Random();
         Boolean lastLevel = false;
+        //Stopwatch
         Stopwatch stopwatch;
         public Finding_Call_Numbers()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// On page Load,Stop watch is inialized as well as the Generate Question Method
+        /// </summary>
         private void Finding_Call_Numbers_Load(object sender, EventArgs e)
         {
             generateQuestion();
             stopwatch = new Stopwatch();
         }
+        /// <summary>
+        /// Generates Question(3rd Level)
+        /// </summary>
         public void generateQuestion()
         {
 
@@ -90,9 +98,12 @@ namespace PROG_Task1
 
         }
 
+        /// <summary>
+        /// When the user presses start the Timer starts
+        /// </summary>
         private void start_btn_Click(object sender, EventArgs e)
         {
-            //When the user presses start the Timer starts
+            
             stopwatch.Start();
             if (start_btn.Text.Equals("START"))
             {
@@ -116,7 +127,9 @@ namespace PROG_Task1
             f1.Show();
             this.Hide();
         }
-
+        /// <summary>
+        /// Resets the game,as well as the Timer
+        /// </summary>
         private void reset_btn_Click(object sender, EventArgs e)
         {
             stopwatch.Reset();
@@ -124,7 +137,9 @@ namespace PROG_Task1
             f2.Show();
             this.Hide();
         }
-
+        /// <summary>
+        /// Initializes the Timer
+        /// </summary>
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
@@ -150,6 +165,10 @@ namespace PROG_Task1
             checkAnswer(sender);
         }
 
+        /// <summary>
+        /// Checks if the answer is correct
+        /// </summary>
+        /// <param name="sender"></param>
         private void checkAnswer(object sender)
         {
             Label l = sender as Label;
@@ -187,7 +206,9 @@ namespace PROG_Task1
             }
 
         }
-
+        /// <summary>
+        /// If 1st level is correct,moves to the Next Level
+        /// </summary>
         private void gotoLevel2()
         {
             int options = rand.Next(0, 1);
