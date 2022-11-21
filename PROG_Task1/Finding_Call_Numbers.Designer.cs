@@ -32,12 +32,12 @@ namespace PROG_Task1
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Finding_Call_Numbers));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.start_btn = new System.Windows.Forms.Button();
-            this.reset_btn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.reset_btn = new System.Windows.Forms.Button();
+            this.start_btn = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Question = new System.Windows.Forms.Label();
             this.o1 = new System.Windows.Forms.Label();
@@ -62,35 +62,26 @@ namespace PROG_Task1
             this.panel1.Size = new System.Drawing.Size(933, 64);
             this.panel1.TabIndex = 0;
             // 
-            // start_btn
+            // label2
             // 
-            this.start_btn.Location = new System.Drawing.Point(12, 18);
-            this.start_btn.Name = "start_btn";
-            this.start_btn.Size = new System.Drawing.Size(95, 34);
-            this.start_btn.TabIndex = 3;
-            this.start_btn.Text = "START";
-            this.start_btn.UseVisualStyleBackColor = true;
-            this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(698, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Timer:";
             // 
-            // reset_btn
+            // label1
             // 
-            this.reset_btn.Location = new System.Drawing.Point(134, 18);
-            this.reset_btn.Name = "reset_btn";
-            this.reset_btn.Size = new System.Drawing.Size(95, 33);
-            this.reset_btn.TabIndex = 5;
-            this.reset_btn.Text = "RESET";
-            this.reset_btn.UseVisualStyleBackColor = true;
-            this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(262, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 34);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "MENU";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(763, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 31);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "00:00:00.00";
             // 
             // button2
             // 
@@ -104,26 +95,35 @@ namespace PROG_Task1
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(763, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 31);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "00:00:00.00";
+            this.button1.Location = new System.Drawing.Point(262, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 34);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "MENU";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label2
+            // reset_btn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(698, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 25);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Timer:";
+            this.reset_btn.Location = new System.Drawing.Point(134, 18);
+            this.reset_btn.Name = "reset_btn";
+            this.reset_btn.Size = new System.Drawing.Size(95, 33);
+            this.reset_btn.TabIndex = 5;
+            this.reset_btn.Text = "RESET";
+            this.reset_btn.UseVisualStyleBackColor = true;
+            this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
+            // 
+            // start_btn
+            // 
+            this.start_btn.Location = new System.Drawing.Point(12, 18);
+            this.start_btn.Name = "start_btn";
+            this.start_btn.Size = new System.Drawing.Size(95, 34);
+            this.start_btn.TabIndex = 3;
+            this.start_btn.Text = "START";
+            this.start_btn.UseVisualStyleBackColor = true;
+            this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
             // 
             // timer1
             // 
@@ -132,6 +132,7 @@ namespace PROG_Task1
             // 
             // Question
             // 
+            this.Question.BackColor = System.Drawing.Color.Khaki;
             this.Question.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Question.Location = new System.Drawing.Point(25, 110);
             this.Question.Name = "Question";
@@ -141,6 +142,7 @@ namespace PROG_Task1
             // 
             // o1
             // 
+            this.o1.BackColor = System.Drawing.Color.PaleGreen;
             this.o1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.o1.Location = new System.Drawing.Point(625, 85);
             this.o1.Name = "o1";
@@ -153,6 +155,7 @@ namespace PROG_Task1
             // 
             // o2
             // 
+            this.o2.BackColor = System.Drawing.Color.DarkTurquoise;
             this.o2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.o2.Location = new System.Drawing.Point(625, 156);
             this.o2.Name = "o2";
@@ -165,6 +168,7 @@ namespace PROG_Task1
             // 
             // o3
             // 
+            this.o3.BackColor = System.Drawing.Color.MediumPurple;
             this.o3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.o3.Location = new System.Drawing.Point(625, 222);
             this.o3.Name = "o3";
@@ -177,6 +181,7 @@ namespace PROG_Task1
             // 
             // o4
             // 
+            this.o4.BackColor = System.Drawing.Color.Crimson;
             this.o4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.o4.Location = new System.Drawing.Point(625, 304);
             this.o4.Name = "o4";
@@ -199,7 +204,7 @@ namespace PROG_Task1
             this.Controls.Add(this.o1);
             this.Controls.Add(this.Question);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Finding_Call_Numbers";
             this.Text = "Finding_Call_Numbers";
             this.Load += new System.EventHandler(this.Finding_Call_Numbers_Load);
