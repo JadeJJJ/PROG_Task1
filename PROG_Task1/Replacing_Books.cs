@@ -50,7 +50,10 @@ namespace PROG_Task1
 
 
         }
-        //Call numbers are generated 
+        /// <summary>
+        /// Call numbers are generated 
+        /// </summary>
+        /// <returns></returns>
         public String callnumber()
         {
             String randomLetters = "";
