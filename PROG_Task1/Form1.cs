@@ -19,6 +19,11 @@ namespace PROG_Task1
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Directed to Identifying Areas page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Identify_btn_Click(object sender, EventArgs e)
         {
             
@@ -27,6 +32,11 @@ namespace PROG_Task1
             this.Hide();
         }
 
+        /// <summary>
+        /// Directed to Replacing Books
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Replace_btn_Click(object sender, EventArgs e)
         {
             Replacing_Books rb = new Replacing_Books();
@@ -34,6 +44,11 @@ namespace PROG_Task1
             this.Hide();
         }
 
+        /// <summary>
+        /// Directed to finding Call Numbers
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void callNum_btn_Click(object sender, EventArgs e)
         {
             if (File.Exists(Database.textFile))
@@ -48,7 +63,11 @@ namespace PROG_Task1
             }
             
         }
-
+        /// <summary>
+        /// On Page Load,data is being read from TextFile
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             Database.readData();
