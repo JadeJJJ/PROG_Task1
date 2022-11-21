@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace PROG_Task1
 {
@@ -17,6 +19,11 @@ namespace PROG_Task1
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Directed to Identifying Areas page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Identify_btn_Click(object sender, EventArgs e)
         {
             
@@ -25,6 +32,11 @@ namespace PROG_Task1
             this.Hide();
         }
 
+        /// <summary>
+        /// Directed to Replacing Books
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Replace_btn_Click(object sender, EventArgs e)
         {
             Replacing_Books rb = new Replacing_Books();
@@ -32,14 +44,34 @@ namespace PROG_Task1
             this.Hide();
         }
 
+        /// <summary>
+        /// Directed to finding Call Numbers
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void callNum_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Finding Call Numbers Has Not Been Implemetned Yet!!");
+            if (File.Exists(Database.textFile))
+            {
+                Finding_Call_Numbers fcn = new Finding_Call_Numbers();
+                fcn.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("CHECK FILE PATH");
+            }
+            
         }
-
+        /// <summary>
+        /// On Page Load,data is being read from TextFile
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            Database.readData();
         }
     }
 }
+//----------------------------------------------------END 0F PR0GR@M-------------------------------------------------------------------------------------------------

@@ -58,9 +58,10 @@ namespace PROG_Task1
             // 
             // callNum_btn
             // 
-            this.callNum_btn.Location = new System.Drawing.Point(576, 298);
+            this.callNum_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.callNum_btn.Location = new System.Drawing.Point(633, 284);
             this.callNum_btn.Name = "callNum_btn";
-            this.callNum_btn.Size = new System.Drawing.Size(229, 113);
+            this.callNum_btn.Size = new System.Drawing.Size(229, 201);
             this.callNum_btn.TabIndex = 2;
             this.callNum_btn.Text = "Finding Call Numbers";
             this.callNum_btn.UseVisualStyleBackColor = true;
