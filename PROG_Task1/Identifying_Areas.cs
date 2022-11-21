@@ -62,17 +62,24 @@ namespace PROG_Task1
             InitializeComponent();
         }
 
-        //Formats the Tabel to act as a stopwatch
+        /// <summary>
+        /// Formats the Label to act as a stopwatch
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timer1_Tick(object sender, EventArgs e)
         {
             label10.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
         }
 
 
-        //When the user clicks the menu button,they are directed to the menu/selection screen
+        /// <summary>
+        /// Users are directed to the menu/selection screen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuBTN_Click(object sender, EventArgs e)
         {
-            //When the user Clicks Menu,they are directed to the Home/selection Page
             Form1 f1 = new Form1();
             f1.Show();
             this.Hide();
@@ -95,7 +102,9 @@ namespace PROG_Task1
         }
 
 
-        //Uses the random function to select a number from 1 - 10 which coreelates with the Call number stored in the Dictionary
+        /// <summary>
+        /// Uses the random function to select a number from 1 - 10 which coreelates with the Call number stored in the Dictionary
+        /// </summary>
         public void callNumberCreate()
         {
             callNum = rand.Next(9) + 1;
@@ -129,7 +138,11 @@ namespace PROG_Task1
 
         }
 
-        //Whenever the user selects a description, they use the Click Button to check the answer
+        /// <summary>
+        /// Click Button to check the answer
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CHECK_Click(object sender, EventArgs e)
         {
             
@@ -163,7 +176,11 @@ namespace PROG_Task1
 
             }
         }
-
+        /// <summary>
+        /// Assess if the answers are correct
+        /// </summary>
+        /// <param name="callkey"></param>
+        /// <param name="key"></param>
         public void ASSESS(int callkey, int key)
         {
 
@@ -231,14 +248,16 @@ namespace PROG_Task1
                 }
               }
         }
-
+        /// <summary>
+        /// Stopwatch starts and Game is playable
+        /// </summary>
         private void startBTN_Click(object sender, EventArgs e)
         {
-            //When the user presses start the Timer starts
+            
             stopwatch.Start();
             if (startBTN.Text.Equals("START"))
             {
-                //User can only start playing after the timer has started,once started the Button will become usable.
+                
                 CHECK.Visible = true;
                 startBTN.Text = "STOP";
             }
@@ -247,7 +266,9 @@ namespace PROG_Task1
                 stopwatch.Stop();
             }
         }
-
+        /// <summary>
+        /// Resets the game and timer
+        /// </summary>
         private void resetBTN_Click(object sender, EventArgs e)
         {
             stopwatch.Reset();
