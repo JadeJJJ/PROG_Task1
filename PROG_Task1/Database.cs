@@ -8,7 +8,9 @@ namespace PROG_Task1
     class Database
     {
 
-        //public static readonly string textFile = "C:\\Users\\jadej\\source\\repos\\JadeJJJ\\PROG_Task1\\PROG_Task1\\Dewey.txt";
+        
+        
+        //Path to the textfile
         public static readonly string textFile = Path.Combine(Directory.GetCurrentDirectory(), "Dewey.txt");
         public static TreeNode<string> root = new TreeNode<string>("root");
         
@@ -17,7 +19,7 @@ namespace PROG_Task1
         {
             if (File.Exists(textFile))
             {
-                // Read a text file line by line.  
+                // Read the text file line by line.  
                 string[] lines = File.ReadAllLines(textFile);
                 int count = -1,tracker=0;
                 foreach (string line in lines)

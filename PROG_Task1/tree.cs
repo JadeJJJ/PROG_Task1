@@ -9,7 +9,7 @@ namespace PROG_Task1
     public class TreeNode<T>
     {
         private readonly T _value;
-        private readonly T _code;
+        
         private readonly List<TreeNode<T>> _children = new List<TreeNode<T>>();
 
         public TreeNode(T value)
