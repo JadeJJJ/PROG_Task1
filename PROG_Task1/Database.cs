@@ -7,10 +7,12 @@ namespace PROG_Task1
 {
     class Database
     {
+
+        //public static readonly string textFile = "C:\\Users\\jadej\\source\\repos\\JadeJJJ\\PROG_Task1\\PROG_Task1\\Dewey.txt";
+        public static readonly string textFile = Path.Combine(Directory.GetCurrentDirectory(), "Dewey.txt");
         public static TreeNode<string> root = new TreeNode<string>("root");
-        public static readonly string textFile = "C:\\Users\\jadej\\source\\repos\\JadeJJJ\\PROG_Task1\\PROG_Task1\\Dewey.txt";
-     
         
+
         public static void readData()
         {
             if (File.Exists(textFile))
